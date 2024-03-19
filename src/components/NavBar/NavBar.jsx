@@ -23,7 +23,7 @@ const NavBar = () => {
   };
 
   return (
-    <div>
+    <div className='fixed top-0 z-10'>
       <div className="h-10 bg-[#DFF5FF] flex items-center justify-center gap-5">
         <p className="text-[#364069] font-medium  block">
           بولي تكس رواد صناعة خزانات المياه البولي ايثيلين

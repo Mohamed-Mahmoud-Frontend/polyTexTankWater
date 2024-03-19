@@ -3,3 +3,47 @@ body{
   font-family: "Noto Kufi Arabic", sans-serif;
 
 }
+.text-color{
+  color: #364069;
+}
+.text-color-p{
+  color: #707d99;
+}
+.imageBack{
+  background-image: url(./assets/cover.jpg) ;
+  background-repeat: no-repeat;
+  background-size:  99%;
+  background-position: 50%;
+
+}
+.ocean {
+  height: 10%;
+  width: 100%;
+  opacity: .4;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+  position: absolute;
+  width: 6400px;
+  top: -198px;
+  left: 0;
+  opacity: .3;
+  height: 198px;
+  transform: translate(0, 0, 0);
+  animation: wave 3s ease infinite;
+}
+
+@keyframes wave {
+  0% { margin-left: 0; }
+  100% { margin-left: -1600px;}
+}
+
+.card:hover  .images{
+  background: #fff;
+  border-radius: 6px;
+
+}
