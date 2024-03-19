@@ -88,7 +88,7 @@ const HomePage = () => {
           <img src={tank} alt="" className="rounded" />
         </div>
 
-        <div className="w-[50%] p-4">
+        <div className="w-[50%] max-md:w-[100%] p-4">
           <h3 className="text-4xl text-color p-3">
             نحن نعمل باتقان وجودة عالية
           </h3>
@@ -112,7 +112,7 @@ const HomePage = () => {
       </section>
 
       <section className="w-[99%] mt-[80px] p-5 rounded-xl mx-auto bg-gradient-to-r from-[#ecf3f5] to-[#378CE7] flex gap-4 max-md:flex-wrap items-center justify-between">
-        <div className="w-[50%] p-4 gap-3 flex flex-col">
+        <div className="w-[50%] max-md:w-[100%] p-4 gap-3 flex flex-col">
           <b className="text-white font-bold pr-3 text-base ">
             نحن شركة بولي تكس
           </b>
@@ -143,12 +143,12 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="mt-16 w-[99%] flex items-start justify-between mx-auto bg-gray-100 p-4">
-        <div className="w-[50%] max-md:w-[100%]">
+      <section className="mt-16 w-[99%] flex-row flex items-start justify-between mx-auto bg-gray-100 p-4">
+        <div className="w-[50%] relative max-md:w-[100%]">
           <Map />
         </div>
 
-        <div className="w-[50%] max-md:w-[100%] p-5">
+        <div className="w-[50%] relative max-md:w-[100%] p-5">
           <h2 className="text-color text-4xl">
             نحن جاهزون لتلقي طلباتكم
           </h2>
