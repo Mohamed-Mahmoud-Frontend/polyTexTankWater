@@ -12,7 +12,7 @@ body{
 .imageBack{
   background-image: url(./assets/cover.jpg) ;
   background-repeat: no-repeat;
-  background-size:  99%;
+  background-size:  100%;
   background-position: 50%;
 
 }
@@ -29,14 +29,20 @@ body{
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
   position: absolute;
   width: 6400px;
-  top: -198px;
+  top: -100px;
   left: 0;
   opacity: .3;
   height: 198px;
   transform: translate(0, 0, 0);
   animation: wave 3s ease infinite;
 }
+@media (max-width:767px) {
+  .wave{
+    top: -250px;
 
+  }
+
+}
 @keyframes wave {
   0% { margin-left: 0; }
   100% { margin-left: -1600px;}
@@ -46,4 +52,11 @@ body{
   background: #fff;
   border-radius: 6px;
 
+}
+.addAnimation a{
+transition:.3s ease-in ;
+}
+.addAnimation a:hover{
+  margin-top: 5px;
+  transform: translateY(-10px);
 }

@@ -23,8 +23,8 @@ const NavBar = () => {
   };
 
   return (
-    <div className='fixed top-0 z-10'>
-      <div className="h-10 bg-[#DFF5FF] flex items-center justify-center gap-5">
+    <div className='fixed top-0 z-10 bg-white'>
+      <div className="h-10 max-md:h-20 bg-[#DFF5FF] flex items-center justify-center gap-5  flex-wrap relative max-md:hidden ">
         <p className="text-[#364069] font-medium  block">
           بولي تكس رواد صناعة خزانات المياه البولي ايثيلين
         </p>
@@ -35,7 +35,7 @@ const NavBar = () => {
       </div>
 
       {windowSizes ? (
-        <nav className="bg-[#378CE7] shadow-xl flex items-start w-screen justify-between">
+        <nav className="bg-[#378CE7] shadow-xl flex items-center w-screen ">
           <div className="w-full px-8 py-2 ">
             <div className="flex items-center justify-between">
               <div className="flex-shrink-0 bg-white rounded-xl">
@@ -80,7 +80,7 @@ const NavBar = () => {
           </div>
         </nav>
       ) : (
-        <div className="flex flex-col w-[98%] mx-auto  rounded-xl shadow p-1 bg-[#378CE7]  mix-md:hidden ">
+        <div className="flex flex-col max-md:w-screen  mx-auto  rounded-xl shadow p-1 bg-[#378CE7]  mix-md:hidden ">
         <div className='flex items-center justify-between p-4'>
 
         <div className="flex-shrink-0 bg-white rounded-xl">
