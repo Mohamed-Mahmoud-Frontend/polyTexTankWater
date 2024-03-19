@@ -57,16 +57,16 @@ const NavBar = () => {
                   <Link to="/services" className="text-white hover:text-gray-300">
                     الاعتمادات
                   </Link>
-                  <Link to="/products" className="text-white hover:text-gray-300">
+                  <Link to="/PageWater" className="text-white hover:text-gray-300">
                     خزانات المياه
                   </Link>
-                  <Link to="/gallery" className="text-white hover:text-gray-300">
+                  <Link to="/Product" className="text-white hover:text-gray-300">
                     المنتجات
                   </Link>
                   <Link to="/gallery" className="text-white hover:text-gray-300">
                     المعرض
                   </Link>
-                  <Link to="/gallery" className="text-white hover:text-gray-300">
+                  <Link to="/Contact" className="text-white hover:text-gray-300">
                     اتصل بنا
                   </Link>
                 </div>
@@ -120,22 +120,22 @@ const NavBar = () => {
             <Link to="/" className="text-white hover:text-gray-300">
               الرئيسية
             </Link>
-            <Link to="/about" className="text-white hover:text-gray-300">
+            <Link to="/About" className="text-white hover:text-gray-300">
               عن الشركة
             </Link>
             <Link to="/services" className="text-white hover:text-gray-300">
               الاعتمادات
             </Link>
-            <Link to="/products" className="text-white hover:text-gray-200">
+            <Link to="/PageWater" className="text-white hover:text-gray-200">
               خزانات المياه
             </Link>
-            <Link to="/gallery" className="text-white hover:text-gray-200">
+            <Link to="/Product" className="text-white hover:text-gray-200">
               المنتجات
             </Link>
             <Link to="/gallery" className="text-white hover:text-gray-200">
               المعرض
             </Link>
-            <Link to="/gallery" className="mb-5 text-white hover:text-gray-200">
+            <Link to="/Contact" className="mb-5 text-white hover:text-gray-200">
               اتصل بنا
             </Link>
           </div>

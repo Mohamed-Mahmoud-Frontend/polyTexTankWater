@@ -1,4 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+
+*{
+scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  ;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #707d99;
+  border-radius: 6px
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #364069;border-radius: 6px
+}
 body{
   font-family: "Noto Kufi Arabic", sans-serif;
 

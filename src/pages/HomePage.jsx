@@ -1,6 +1,8 @@
 import "swiper/swiper-bundle.css";
 import logo from "../assets/LogoPoly.png";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import Carousel from "../components/Carousel/Carousel";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const cardData = [
   {
@@ -33,18 +35,20 @@ const HomePage = () => {
           </div>
         </main>
       </div>
+      <AnimationOnScroll animateIn='fadeIn'
+      delay={50} duration={50}>
+        <div className="mt-[70px] max-md:mt-[0px] ">
+          <h3 className="text-4xl font-[700]  text-center text-color">
+            بولي تكس لصناعة خزانات المياة
+          </h3>
 
-      <div className="mt-[70px] max-md:mt-[0px] ">
-        <h3 className="text-4xl font-[700]  text-center text-color">
-          بولي تكس لصناعة خزانات المياة
-        </h3>
-
-        <p className="text-xl w-[80%] max-md:w-[95%] mx-auto  font-[400] mt-5  text-center text-color-p">
-          شركة بولي تكس لتصنيع خزانات المياة البولي ايثيلين هي واحدة من كبري
-          شركات تصنيع خزانات المياة في مصر، شركه بولي تكس PoLY TEX لاول مره في
-          مصر خزانات مزوده بجلب نحاس لسهوله الفتح والتركيب العشوائي
-        </p>
-      </div>
+          <p className="text-xl w-[80%] max-md:w-[95%] mx-auto  font-[400] mt-5  text-center text-color-p">
+            شركة بولي تكس لتصنيع خزانات المياة البولي ايثيلين هي واحدة من كبري
+            شركات تصنيع خزانات المياة في مصر، شركه بولي تكس PoLY TEX لاول مره في
+            مصر خزانات مزوده بجلب نحاس لسهوله الفتح والتركيب العشوائي
+          </p>
+        </div>
+      </AnimationOnScroll>
 
       <div className="flex flex-wrap items-center justify-between w-full gap-8 px-8 mt-16 ">
         {cardData.map((card, index) => (
@@ -68,7 +72,9 @@ const HomePage = () => {
           </div>
         ))}
       </div>
-
+      <div>
+        <Carousel />
+      </div>
       <footer className="py-6 text-white mt-10 bg-[#378CE7] min-h-60 rounded-xl">
         <div className="container grid grid-cols-1 gap-8 mx-auto sm:grid-cols-2 md:grid-cols-4">
           <div>
