@@ -72,7 +72,7 @@ const NavBar = () => {
                 </div>
               </div>
               <div className='max-md:hidden'>
-                <button className="text-[#1878F5] bg-white p-2 rounded-lg mt-4 md:mt-0">
+                <button className="text-[#1878F5] hover:bg-[#006eff] hover:text-white bg-white p-2 rounded-lg mt-4 md:mt-0">
                   تواصل معنا
                 </button>
               </div>

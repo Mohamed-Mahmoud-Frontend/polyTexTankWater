@@ -85,3 +85,25 @@ transition:.3s ease-in ;
   margin-top: 5px;
   transform: translateY(-10px);
 }
+.addAnimationPageHome{
+animation: up_down infinite 2s alternate;
+}
+.addAnimationPageHome2{
+  animation: up_down2 infinite 2s alternate;
+  }
+  @keyframes up_down2 {
+    0%{
+    transform: translateX(10px);
+    }
+    100%{
+      transform: translateX(-10px);
+    }
+    }
+@keyframes up_down {
+0%{
+transform: translateY(10px);
+}
+100%{
+  transform: translateY(-10px);
+}
+}
