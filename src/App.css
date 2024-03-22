@@ -72,6 +72,10 @@ body{
   0% { margin-left: 0; }
   100% { margin-left: -1600px;}
 }
+.image-gallery img {
+border-radius: 16px;
+
+}
 
 .card:hover  .images{
   background: #fff;

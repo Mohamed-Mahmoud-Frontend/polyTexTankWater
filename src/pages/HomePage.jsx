@@ -8,6 +8,7 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 import Map from "../components/Map/Map";
 import { VscVerifiedFilled } from "react-icons/vsc";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 const cardData = [
   {
@@ -92,12 +93,7 @@ const HomePage = () => {
           <h3 className="text-4xl text-color p-3">
             نحن نعمل باتقان وجودة عالية
           </h3>
-          <p className="text-color-p text-lg">
-            شركة بولي تكس شركة متخصصة في توريد وتصنيع أفضل وأجود أنواع الخزانات
-            البولي ايثيلين المستخدمه في تخزين مياه الشرب وتخزين المواد الغذائية
-            والمواد الكميائية. للأول مرة فى مصر خزانات بولى ايثيلين مزوده بجلب
-            نحاس لضمان سلامة الخزان من التفتيح العشوائي ولتوفي مستلزمات التوصيل
-            للمستهلك.
+          <p className="text-color-p text-lg">شركة بولي تكس هي شركة متخصصة في توريد وتصنيع أفضل وأجود أنواع الخزانات البولي إيثيلين المستخدمة في تخزين مياه الشرب والمواد الغذائية والمواد الكيميائية. وتتميز شركة بولي تكس بتقديم خزانات بولي إيثيلين مزودة بغطاء من النحاس لضمان سلامة الخزان من التفتيح العشوائي، كما توفر جميع المستلزمات اللازمة لتوصيل المنتجات إلى المستهلك بكفاءة وجودة عالية. يعتبر ذلك خطوة مبتكرة ومميزة لتلبية احتياجات السوق المصري بشكل شامل وموثوق.
           </p>
 
           <div className="flex gap-4 mt-5 items-center justify-start">
@@ -119,20 +115,15 @@ const HomePage = () => {
           <h3 className="text-4xl text-white p-3">
             رواد صناعة خزانات المياة البولي ايثيلين{" "}
           </h3>
-          <p className="text-white text-base">
-            في شركة بولي تكس نقدم جميع انواع خزانات المياة بجميع الخامات
-            والمقاسات، لدينا ايضا جميع اشكال اكشاك الحراسة المصنعة من الفيبر
-            جلاس. خزانات المياة مصنوعة من مادة البولي ايثيلين وتستخدم في تخزين
-            المياة والكيماويات والمواد البترولية، فهي مصنوعة من الايثيلين
-            المعالج غذائيا وتمت الموافقة على صلاحيتها لتخزين مياه الشرب. تبدأ
-            سعة هذه الخزانات من 500 لتر إلى 20000 لتر بأشكال مختلفة
-          </p>
+          <p className="text-white text-base">في شركة بولي تكس، نفتخر بتقديم مجموعة واسعة من خزانات المياه بمختلف الخامات والمقاسات لتلبية احتياجات عملائنا. بالإضافة إلى ذلك، نقدم مجموعة متنوعة من أشكال أكشاك الحراسة المصنوعة من الفايبر جلاس. </p>
+          <p className="text-white text-base">تتميز خزانات المياه التي نصنعها بأنها مصنوعة من مادة البولي إيثيلين، والتي تُستخدم في تخزين المياه والمواد الكيميائية والبترولية. تُصنع هذه الخزانات من الإيثيلين المعالج غذائيًا، وقد تمت الموافقة عليها لتخزين مياه الشرب، مما يجعلها خيارًا موثوقًا وآمنًا للاستخدام المنزلي والصناعي على حد سواء. </p>
+          <p className="text-white text-base">تتراوح سعة هذه الخزانات من 500 لتر إلى 20000 لتر، مع توفير أشكال مختلفة تناسب احتياجات العملاء المتنوعة وتتميز بالجودة والمتانة. </p>
 
           <div className="flex gap-4 mt-5 items-center justify-start">
             <button className="border px-2 py-2 rounded text-[#378CE7] hover:bg-[#378CE7] hover:text-white bg-white ">
               المزيد من منتجاتنا{" "}
             </button>
-            <button className="border px-2 py-2 bg-[#378CE7] text-white rounded hover:bg-white  hover:text-[#378CE7]">
+            <button className="border px-2 py-2h bg-[#378CE7] text-white rounded hover:bg-white  hover:text-[#378CE7]">
               تواصل معنا{" "}
             </button>
           </div>
@@ -258,44 +249,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <footer className="py-6 text-white mt-10 bg-[#378CE7] min-h-60 rounded-xl">
-        <div className="container grid grid-cols-1 gap-8 mx-auto max-sm:grid-cols-1 max-sm:px-5 md:grid-cols-4">
-          <div className="flex flex-col gap-3 p-1 ">
-            <h4 className="mb-2 text-color text-lg font-bold">العنوان : </h4>
-            <p className="">مصطفي النحاس – مدينة نصر – القاهرة</p>
-            </div>
-          <div className="flex flex-col gap-3 p-1 ">
-            <h4 className="mb-2 text-lg font-bold text-color ">التواصل</h4>
-            <p className="text-base cursor-pointer">هاتف: 201091008926+</p>
-            <p className="text-[16px] cursor-pointer">
-              بريد إلكتروني: Sales@polytex-eg.com
-            </p>
-          </div>
-          <div>
-            <h4 className="mb-2 text-color text-lg font-bold">سياسة المتجر</h4>
-            <ul className="flex flex-col gap-3 p-1 ">
-              <li>شروط الاستخدام</li>
-              <li>سياسة الخصوصية</li>
-              <li>المراجعات والشكاوى</li>
-            </ul>
-          </div>
-          <div className="flex flex-col gap-3 p-1 ">
-            <h4 className="mb-2 text-color text-lg font-bold">متابعتنا</h4>
-            <div className="flex gap-4 addAnimation">
-              <a href="#" className="text-white">
-                <FaFacebook size={24} />
-              </a>
-              <a href="#" className="text-white">
-                <FaTwitter size={24} />
-              </a>
-              <a href="#" className="text-white">
-                <FaInstagram size={24} />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div></div>
-      </footer>
+    <Footer/>
     </div>
   );
 };

@@ -18,6 +18,7 @@ const NavBar = () => {
   }, []);
 
   const windowSizes = windowWidth >= 900;
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -48,25 +49,25 @@ const NavBar = () => {
 
               <div className={`md:flex flex-col md:flex-row md:items-center `}>
                 <div className="items-center gap-5 md:flex">
-                  <Link to="/" className="text-white hover:text-gray-300">
+                  <Link  to="/" className="text-white hover:text-gray-300">
                     الرئيسية
                   </Link>
-                  <Link to="/about" className="text-white hover:text-gray-300">
+                  <Link  to="/about" className="text-white hover:text-gray-300">
                     عن الشركة
                   </Link>
-                  <Link to="/services" className="text-white hover:text-gray-300">
+                  <Link  to="/services" className="text-white hover:text-gray-300">
                     الاعتمادات
                   </Link>
-                  <Link to="/PageWater" className="text-white hover:text-gray-300">
+                  <Link  to="/PageWater" className="text-white hover:text-gray-300">
                     خزانات المياه
                   </Link>
-                  <Link to="/Product" className="text-white hover:text-gray-300">
+                  <Link  to="/Product" className="text-white hover:text-gray-300">
                     المنتجات
                   </Link>
-                  <Link to="/gallery" className="text-white hover:text-gray-300">
+                  <Link  to="/gallery" className="text-white hover:text-gray-300">
                     المعرض
                   </Link>
-                  <Link to="/Contact" className="text-white hover:text-gray-300">
+                  <Link  to="/Contact" className="text-white hover:text-gray-300">
                     اتصل بنا
                   </Link>
                 </div>
@@ -117,25 +118,25 @@ const NavBar = () => {
         </div>
 
           <div className={`items-center shadow gap-5 ${isOpen ? "flex flex-col items-center justify-center" :"hidden"}` }>
-            <Link to="/" className="text-white hover:text-gray-300">
+            <Link onClick={toggleMenu} to="/" className="text-white hover:text-gray-300">
               الرئيسية
             </Link>
-            <Link to="/About" className="text-white hover:text-gray-300">
+            <Link onClick={toggleMenu} to="/About" className="text-white hover:text-gray-300">
               عن الشركة
             </Link>
-            <Link to="/services" className="text-white hover:text-gray-300">
+            <Link onClick={toggleMenu} to="/services" className="text-white hover:text-gray-300">
               الاعتمادات
             </Link>
-            <Link to="/PageWater" className="text-white hover:text-gray-200">
+            <Link onClick={toggleMenu} to="/PageWater" className="text-white hover:text-gray-200">
               خزانات المياه
             </Link>
-            <Link to="/Product" className="text-white hover:text-gray-200">
+            <Link onClick={toggleMenu} to="/Product" className="text-white hover:text-gray-200">
               المنتجات
             </Link>
-            <Link to="/gallery" className="text-white hover:text-gray-200">
+            <Link onClick={toggleMenu} to="/gallery" className="text-white hover:text-gray-200">
               المعرض
             </Link>
-            <Link to="/Contact" className="mb-5 text-white hover:text-gray-200">
+            <Link onClick={toggleMenu} to="/Contact" className="mb-5 text-white hover:text-gray-200">
               اتصل بنا
             </Link>
           </div>
